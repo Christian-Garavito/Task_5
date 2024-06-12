@@ -1,6 +1,6 @@
 
 
-//////////////////////////////////////punto1
+//-----------------------------sesion 3   sepunto1-----------------------------------------------
 
 // Función que cambia el contenido del texto de un elemento h2
 function cambiarContenidoTexto() {
@@ -15,6 +15,8 @@ function cambiarContenidoTexto() {
     heading2.innerText = nuevoTitulo;
 }
 
+//-----------------------------sesion 4 div expacion  punto2 A-----------------------------------------------
+
 // Función que cambia el color de fondo de un div al color rojo cuando el mouse entra en él
 const entroAlDiv = (ev) => {
     // Cambiamos el color de fondo del div con id 'divCambioColorHover' a rojo
@@ -26,6 +28,8 @@ const salioDelDiv = (ev) => {
     // Cambiamos el color de fondo del div con id 'divCambioColorHover' a blanco
     document.getElementById("divCambioColorHover").style.backgroundColor = "white";
 };
+
+//-----------------------------sesion 4 punto 3-----------------------------------------------
 
 // Función que agrega un nuevo item a una lista
 function agregarItemLista() {
@@ -57,6 +61,8 @@ function eliminarItemLista(ev) {
     ev.target.remove();
 }
 
+//-----------------------------sesion 4 punto 4-----------------------------------------------
+
 // Función que muestra u oculta un div y cambia el texto del botón
 const mostraOcultar = (ev) => {
     // Obtenemos una referencia al div con el id 'divQueSeVaAOcultar'
@@ -75,6 +81,8 @@ const mostraOcultar = (ev) => {
         ev.target.innerHTML = 'Mostrar<i class="fa-solid fa-chevron-right lol"></i> ';
     }
 };
+
+//-----------------------------sesion 13 punto 5-----------------------------------------------
 
 // Variables globales para nombres de elementos y tamaño del paso
 const nombreJugador = "jugadorCajita";
@@ -185,6 +193,9 @@ const pausaReanudar = (ev) => {
         ev.target.innerText = "Pausar";
     }
 };
+
+
+//-----------------------------sesion 9 punto 2 B -----------------------------------------------
 
 // Función que cambia la fuente del texto de un elemento basado en la selección de un dropdown
 const cambiarFuente = (ev) => {
