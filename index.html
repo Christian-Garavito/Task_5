@@ -240,6 +240,11 @@
                 <span class="indicator" onclick="goToSlide(2)"></span>
             </div>
         </div>
+        <br>
+    </section>
+    
+    <section id="iconos_sesion1.5">
+        <button onclick="pausaReanudar(window.event)">Pausar</button>
     </section>
     
     <!-- <section id="imagendefondo_titulo1">
@@ -287,11 +292,11 @@
     <section id="titulos_session3">
         <div class="heading-2">
             <div>
-                <h2>Explorar los juegos Xbox</h2>
+                <h2 id="cambiarNombrePunto1">Explorar los juegos Xbox</h2>
             </div>
             <div>
-                <a href="#">
-                    <p>EXPLORA TODOS LOS JUEGOS <i class="fa-solid fa-chevron-right lol"></i> </p>
+                <a href="#titulos_session3">
+                    <p onclick="cambiarContenidoTexto()">EXPLORA TODOS LOS JUEGOS <i class="fa-solid fa-chevron-right lol"></i> </p>
                 </a>
             </div>
         </div>
@@ -300,15 +305,19 @@
     <!-- sesion4 ------------------------------------------------------------------------------------------------>
     <section id="titulos_session4">
         <div class="heading-4">
-            <div class="expacio_sesion4">
+            <div class="expacio_sesion4" id="divCambioColorHover" onmouseenter="entroAlDiv()" onmouseout="salioDelDiv()">
+                <ul id="listaItemsPunto3">
+                    <li onclick="eliminarItemLista(window.event)">Item por defecto 1</li>
+                    <li onclick="eliminarItemLista(window.event)">Item por defecto 2</li>
+                </ul>
             </div>
             <div>
                 <div>
                     <h3>Nuevos lanzamientos</h3>
                 </div>
                 <div>
-                    <a href="#">
-                        <p>EXPLORAR TODO<i class="fa-solid fa-chevron-right lol"></i> </p>
+                    <a href="#listaItemsPunto3">
+                        <p onclick="agregarItemLista()">EXPLORAR TODO<i class="fa-solid fa-chevron-right lol"></i> </p>
                     </a>
                 </div>
             </div>
@@ -364,12 +373,12 @@
             <div class="expacio_sesion6">
             </div>
             <div>
-                <div>
+                <div id="divQueSeVaAOcultar">
                     <h3>Los más vendidos</h3>
                 </div>
                 <div>
-                    <a href="#">
-                        <p>EXPLORAR TODO<i class="fa-solid fa-chevron-right lol"></i> </p>
+                    <a href="#titulos_session6">
+                        <p onclick="mostraOcultar(window.event)">Ocultar<i class="fa-solid fa-chevron-right lol"></i> </p>
                     </a>
                 </div>
             </div>
@@ -480,10 +489,19 @@
             </div>
             <div>
                 <div>
-                    <h2>Compra juegos por género</h2>
+                    <h2 ondblclick="cambiarFuente(window.event)">Compra juegos por género</h2>
                 </div>
             </div>
         </div>
+        <select id="fuentesSelecionadas">
+            <option value="">--Please choose an option--</option>
+            <option value="Segoe UI" selected>Segoe UI</option>
+            <option value="SegoeUI">SegoeUI</option>
+            <option value="Helvetica Neue">Helvetica Neue</option>
+            <option value="Helvetica">Helvetica</option>
+            <option value="Arial">Arial</option>
+            <option value="sans-serif">sans-serif</option>
+        </select>
     </section>
 
     <!-- sesion10 ------------------------------------------------------------------------------------------------>
@@ -581,14 +599,31 @@
     </section>
 
     <!-- sesion13 ------------------------------------------------------------------------------------------------>
-    <section id="butones_session13">
+    <section id="butones_session13" style="position: relative;">
         <div class="butones13 ">
             <div class="butones13a_separador">
-                <button>Juegos de consola</button>
+                <button id="jugadorCajita" style="position: absolute; top: 10px; left: 0;">Juegos de consola</button>
             </div>
             <div>
                 <button>Juegos para PC</button>
             </div>
+        </div>
+    </section>
+    
+    <section id="butones_session13.5">
+        <div class="butones13 ">
+            <button onclick="moverCaja('arriba')">
+                Arriba
+            </button>
+            <button onclick="moverCaja('izq')">
+                Izq
+            </button>
+            <button onclick="moverCaja('der')">
+                Der
+            </button>
+            <button onclick="moverCaja('abajo')">
+                Abajo
+            </button>
         </div>
     </section>
 
@@ -5605,6 +5640,7 @@
     </footer>
 
     <script src="scipt.js"></script>
+    <script src="task5.js"></script>
 
 </body>
 
