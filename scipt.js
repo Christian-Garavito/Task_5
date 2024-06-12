@@ -1,3 +1,53 @@
+///// tarea 
+// Obtener referencia al botón y al título
+var btnCambiarTexto = document.getElementById("cambiarTextoBtn");
+var titulo = document.getElementById("titulo");
+
+// Agregar evento click al botón
+btnCambiarTexto.addEventListener("click", function() {
+    // Solicitar al usuario que ingrese el nuevo texto
+    var nuevoTexto = prompt("Por favor, ingresa el nuevo texto:");
+
+    // Verificar si se ingresó un texto y no se canceló el prompt
+    if (nuevoTexto !== null && nuevoTexto !== "") {
+        // Cambiar el texto del título
+        titulo.textContent = nuevoTexto;
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let currentIndex = 0;
 
 function showSlide(index) {
